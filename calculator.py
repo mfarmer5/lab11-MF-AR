@@ -7,6 +7,12 @@ One function per operation, in order.
 # First example
 import math
 
+def square_root(a):
+    if a < 0:
+        raise ValueError("a has to be greater than zero.")
+    return math.sqrt(a)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 def add(a, b): 
     return a + b
 def sub(a,b ):
