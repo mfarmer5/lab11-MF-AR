@@ -8,7 +8,7 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
 
-    # ##########################
+    # ########################
 
     ######## Partner 1
     def test_multiply(self, a, b): # 3 assertions
