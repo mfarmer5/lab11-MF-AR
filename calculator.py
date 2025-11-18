@@ -1,8 +1,3 @@
-"""
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
 #https://github.com/mfarmer5/lab11-MF-AR
 #Partner 1: Mahak Farmer
 #Partner 2: Aashita Rai
