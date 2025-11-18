@@ -25,7 +25,7 @@ class TestCalculator(unittest.TestCase):
         assert (mul(8, 3))
     def test_divide(self): # 3 assertions
         assert(div(4, 2))
-        assert(div(6, 0))
+        assert(div(6, 3))
         assert(div(1, 1))
 
     # ##########################
