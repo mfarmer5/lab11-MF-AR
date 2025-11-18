@@ -25,7 +25,7 @@ class TestCalculator(unittest.TestCase):
         assert (mul(8, 3))
     def test_divide(self): # 3 assertions
         assert(div(4, 2))
-        assert(div(6, 0))
+        assert(div(0, 6))
         assert(div(1, 1))
 
     # ##########################
@@ -44,7 +44,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            logarithm(10, 1)
+            logarithm(1, 10)
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
