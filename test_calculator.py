@@ -7,23 +7,46 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
+    def test_add(self): # 3 assertions
+        assert (add(4,6))
+        assert (add(6,7))
+        assert (add(32, 64))
 
-    # ########################
+    def test_subtract(self): # 3 assertions
+        assert (sub(4,6))
+        assert (sub (10, 0))
+        assert (sub(6,7))
+    # ##########################
 
     ######## Partner 1
     def test_multiply(self, a, b): # 3 assertions
-       assert (mul(5, 6))
-       assert (mul(7, 4))
-       assert (mul(8, 3))
+        assert (mul(5, 6))
+        assert (mul(7, 4))
+        assert (mul(8, 3))
     def test_divide(self): # 3 assertions
-        assert (div(4, 2))
+        assert(div(4, 2))
         assert(div(0, 6))
         assert(div(1, 1))
 
     # ##########################
 
     ######## Partner 2
+    def test_divide_by_zero(self): # 1 assertion
+    #     # call division function inside, example:
+        with self.assertRaises(ZeroDivisionError):
+              div(0, 5)
+    #     fill in code
 
+    def test_logarithm(self): # 3 assertions
+        assert (log(9, 3))
+        assert (log(10, 100))
+        assert (log(100, 10))
+
+    def test_log_invalid_base(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            log(10, 1)
+    #     # use same technique from test_divide_by_zero
+    #     fill in code
     # ##########################
     
     ######## Partner 1
